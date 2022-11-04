@@ -30,7 +30,7 @@ public class Examen_Final {
                 ejercicio1();
                 break;
             case 2:
-               ejercicio1();
+               ejercicio2();
                 break;
             case 3:
                 ejercicio3();
@@ -39,7 +39,7 @@ public class Examen_Final {
                 salir();
                 break; 
         }// fin switch menu principal
-        if (menu>5)
+        if (menu>4)
         {
             System.out.println("Opcion no disponible, por favor intente de nuevo");
             principal();
@@ -69,7 +69,7 @@ public class Examen_Final {
                 ejercicio1();
                 break;
             case 2:
-               ejercicio1();
+               ejercicio2();
                 break;
             case 3:
                 ejercicio3();
@@ -142,8 +142,32 @@ public class Examen_Final {
     
     static void ejercicio2()
     {
+     
+           int numimpar;
+  
         
         
+        Scanner leer=new Scanner(System.in);
+        System.out.println("Escriba un numero impar para hacer la piramide");
+        numimpar=leer.nextInt();
+        leer.close();
+        
+        System.out.println();
+        for(int j = 1; j <= numimpar-j+1; j++){
+            
+            for(int i = 1; i<=numimpar; i++){
+                System.out.println(" ");
+
+            
+            
+            
+            }
+            for(int k=1; k<=(j*2)-1; k++){
+                System.out.println("*");
+        }
+    }
+        
+        System.out.println();
         
         
     }//fin ejercicio2
